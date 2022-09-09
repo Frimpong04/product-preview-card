@@ -59,7 +59,6 @@ p {
 
 .card-text-header h1 {
     font-size:1.8rem;
-    text-align:center;
     color:var(--subheading-color);
     margin-bottom: 1rem;
     font-weight:700;
