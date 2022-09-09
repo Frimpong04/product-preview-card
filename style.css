@@ -14,43 +14,27 @@ html {
     --button-background: hsl(158, 36%, 37%);
 }
 
-@font-face {
-    font-family: headingFont;
-    src: ur("./fonts/Montserrat/Montserrat");
-}
-
-@font-face {
-    font-family: subheading;
-    src: url("./fonts/Fraunces/Fraunces");
-}
 
 body {
     background-color: var(--background-color);
+    
 }
 
 p {
     font-size:1.4rem;
-    font-family:subheading;
+    line-height:1.6;
+    margin-bottom:2rem;
+    font-family: 'Montserrat', serif;
+    color:var(--subheading-color);
 }
 
-h1 {
-    font-size: 3rem;
-    font-family:headingFont;
-}
-
-h2 {
-    font-size:2rem;
-    font-family:headingFont;
-}
 
 /* styles card component */
 .card {
     width:50%;
     display:flex;
     justify-content:center;
-    align-items: center;
     margin:50% auto;
-    transform:translateY(-100%);
     background-color: var(--text-background);
     border-radius:2rem;
     flex-wrap:wrap;
@@ -68,5 +52,84 @@ h2 {
 .card-text {
     flex: 1 1 20rem;
     padding:1.5rem;
-    
+}
+.card-text-header {
+    margin:2rem 0rem;
+}
+
+.card-text-header h1 {
+    font-size:1.8rem;
+    text-align:center;
+    color:var(--subheading-color);
+    margin-bottom: 1rem;
+    font-weight:700;
+    font-family: 'Fraunces', serif;
+}
+
+.card-text-header h2 {
+    font-size:4.8rem;
+    font-family: 'Fraunces', serif;
+    font-weight:700;
+    color:var(--main-heading-color);
+}
+
+.price {
+    margin:2rem 0;
+}
+
+span {
+    font-family:'Fraunces', serif;
+}
+
+.sale-price {
+    font-size:3.6rem;
+    color:var(--button-background);
+    margin-right:1rem;
+}
+
+.original-price {
+    text-decoration:line-through;
+    font-size:2rem;
+    color:var(--subheading-color);
+}
+
+button {
+    background-color: var(--button-background);
+    border:none;
+    color: white;
+    padding:1rem 3rem;
+    font-family: 'Montserrat', serif;
+}
+
+.btn span {
+    margin-left:1rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover {
+    background-color:hsla(158, 36%, 20%) ;
+    cursor:pointer;
+}
+
+/* media query for mobile */
+@media screen and (max-width: 375px) {
+    html {
+        font-size:55%;
+    }
+
+    .card {
+        width:90%;
+        margin:2rem auto;
+        border-radius:0px;
+    }
+    .card-image {
+        border-radius:0px;
+    }
+
+    .card-image img {
+        border-radius:0px;
+    }
+    .card-text {
+        padding:2rem;
+    }
 }
