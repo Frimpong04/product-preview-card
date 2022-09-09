@@ -1,0 +1,28 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size:62.5%;
+    --background-color: hsl(30, 38%, 92%);
+    --text-background: hsl(0, 0%, 100%);
+    --subheading-color:hsl(228, 12%, 48%);
+    --main-heading-color:hsl(212, 21%, 14%);
+    --button-background: hsl(158, 36%, 37%);
+}
+
+@font-face {
+    font-family: "Monts";
+    src: ur("./fonts/Montserrat/Montserrat");
+}
+
+@font-face {
+    font-family: "Fraunce";
+    src: url("./fonts/Fraunces/Fraunces");
+}
+
+p {
+    font-size:1.4rem;
+}
